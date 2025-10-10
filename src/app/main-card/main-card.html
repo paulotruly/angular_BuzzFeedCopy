@@ -30,13 +30,13 @@
             <div class="relative overflow-hidden bg-yellow-200 w-full h-[260px]">
                 <img
                 class="absolute top-[-120px]"
-                src="https://www.rollingstone.com/wp-content/uploads/2024/12/GettyImages-2184665308-1.jpg?w=1581&h=1054&crop=1"
+                [src]= "primeiroQuiz.image"
                 alt="">
             </div>
 
             <div class="pt-4 px-2">
-                <h6 class="font-bold text-[32px] leading-tight transition-colors ease-out duration-300 hover:text-blue-600"> What's your Bratness level? Prove you're a true Charli XCX fan </h6>
-                <p class="text-[20px] mt-1"> Think you're Brat certified? Let’s find out. </p>
+                <h6 class="font-bold text-[32px] leading-tight transition-colors ease-out duration-300 hover:text-blue-600"> {{ primeiroQuiz.title }} </h6>
+                <p class="text-[20px] mt-1"> {{ primeiroQuiz.subtitle }} </p>
             </div>
         </div>
 

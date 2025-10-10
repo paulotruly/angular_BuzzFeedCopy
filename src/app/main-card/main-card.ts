@@ -8,5 +8,6 @@ import * as dadosQuizzes from '../../../public/dados.json'
   styleUrl: './main-card.css'
 })
 export class MainCard {
-  
+  quizzesDados: any[] = dadosQuizzes.quizzes;
+  primeiroQuiz: any = this.quizzesDados[1];
 }
