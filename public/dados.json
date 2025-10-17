@@ -9,8 +9,60 @@
         "username": "charlixfan99",
         "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZuDVYvI4TCenYhKqUPAAMGzBJnzRrwrAr9w&s"
       },
-      "questions": []
+      "questions": [
+      {
+        "titulo": "What is the name of the album Charli XCX released in 2022?",
+        "alternativas": [
+          { "texto": "Crash", "respostaCerta": true },
+          { "texto": "Brat" },
+          { "texto": "Pop 2" },
+          { "texto": "How I'm Feeling Now" }
+        ]
+      },
+      {
+      "titulo": "Which artist collaborated with Charli XCX on the song '1999'?",
+      "alternativas": [
+        { "texto": "Troye Sivan", "respostaCerta": true },
+        { "texto": "Rina Sawayama" },
+        { "texto": "Dua Lipa" },
+        { "texto": "A. G. Cook" }
+      ]
+      },
+      {
+      "titulo": "What music style is most associated with the 'Pop 2' mixtape?",
+      "alternativas": [
+        { "texto": "Hyperpop", "respostaCerta": true },
+        { "texto": "Alternative rock" },
+        { "texto": "Trap" },
+        { "texto": "Jazz fusion" }
+      ]
+      },
+      {
+      "titulo": "Charli XCX's song 'Boom Clap' was featured on which movie soundtrack?",
+      "alternativas": [
+        { "texto": "The Fault in Our Stars", "respostaCerta": true },
+        { "texto": "The Hunger Games" },
+        { "texto": "Paper Towns" },
+        { "texto": "Divergent" }
+      ]
+      },
+      {
+      "titulo": "What is Charli XCX's real name?",
+      "alternativas": [
+        { "texto": "Charlotte Aitchison", "respostaCerta": true },
+        { "texto": "Charlie Cross" },
+        { "texto": "Charlotte Cox" },
+        { "texto": "Charlie Xandra" }
+      ]
+      }
+      ]
     },
+
+
+
+
+    
+
     {
       "id": 2,
       "title": "Build your dream concert lineup and we’ll guess your star sign",
@@ -22,6 +74,11 @@
       },
       "questions": []
     },
+
+
+
+
+
     {
       "id": 3,
       "title": "Which hyperpop artist matches your vibe?",

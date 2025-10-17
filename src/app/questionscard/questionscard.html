@@ -1,0 +1,14 @@
+        <div *ngFor="let pergunta of questions" class="my-4">
+            <div class="flex justify-center items-center w-full px-10 py-4 my-4 rounded-md bg-black text-white">
+                <h6 class="text-[70px] text-center leading-tight font-bold"> {{ pergunta.titulo }} </h6>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div *ngFor="let alternativa of pergunta.alternativas"
+                class="group flex justify-center items-center w-50 h-[150px] rounded-sm bg-red-600">
+                    <p class="text-white text-[60px] text-center font-bold overflow-hidden group-hover:scale-110 transition-transform">
+                        {{ alternativa.texto }}
+                    </p>
+                </div>
+            </div>
+        </div>

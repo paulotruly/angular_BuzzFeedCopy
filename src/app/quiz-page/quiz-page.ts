@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Cabecalho } from '../cabecalho/cabecalho';
+import { Questionscard } from '../questionscard/questionscard';
 import * as dadosQuizzes from '../../../public/dados.json';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-quiz-page',
-  imports: [Cabecalho],
+  standalone: true,
+  imports: [Cabecalho, Questionscard],
   templateUrl: './quiz-page.html',
   styleUrl: './quiz-page.css'
 })
