@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { QuizCard } from '../quiz-card/quiz-card';
 import * as dadosQuizzes from '../../../public/dados.json';
 import { CommonModule } from '@angular/common';
@@ -12,4 +13,11 @@ import { CommonModule } from '@angular/common';
 })
 export class MainContent {
   quizzes = dadosQuizzes.quizzes;
+
+  constructor(private router: Router) {}
+
+  irParaQuiz(quiz: any) {
+    this.router.navigate(['/quizpage', quiz.id]);
+
+  }
 }

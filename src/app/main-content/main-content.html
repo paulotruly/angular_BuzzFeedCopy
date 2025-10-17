@@ -2,6 +2,8 @@
     <h3 class="text-[32px] font-bold mb-4"> Bombando no BuzzFeed </h3>
 
     <div class="grid grid-cols-2 gap-4">
-        <app-quiz-card *ngFor="let quiz of quizzes" [dados]="quiz"></app-quiz-card>
+        <div *ngFor="let quiz of quizzes" (click)="irParaQuiz(quiz)">
+            <app-quiz-card [dados]="quiz"></app-quiz-card>
+        </div>
     </div>
 </div>

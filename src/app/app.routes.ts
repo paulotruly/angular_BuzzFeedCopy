@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
     {path: '', component: Home},
-    {path: 'quizpage', component: QuizPage}
+    {path: 'quizpage/:id', component: QuizPage}
 ];
 
 @NgModule({

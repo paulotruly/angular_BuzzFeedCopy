@@ -1,6 +1,7 @@
 {
   "quizzes": [
     {
+      "id": 1,
       "title": "What's your Bratness level? Prove you're a true Charli XCX fan",
       "subtitle": "Think you're Brat certified? Let’s find out",
       "image": "https://www.rollingstone.com/wp-content/uploads/2024/12/GettyImages-2184665308-1.jpg?w=1581&h=1054&crop=1",
@@ -11,6 +12,7 @@
       "questions": []
     },
     {
+      "id": 2,
       "title": "Build your dream concert lineup and we’ll guess your star sign",
       "subtitle": "Only true music lovers will pass this one",
       "image": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/09/lollapalooza-2024-ingressos.jpg?w=1200&h=900&crop=0",
@@ -21,6 +23,7 @@
       "questions": []
     },
     {
+      "id": 3,
       "title": "Which hyperpop artist matches your vibe?",
       "subtitle": "Your playlist says a lot about you",
       "image": "https://i.ytimg.com/vi/CN1Eo0BHCM8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDVOP44G2jOZESgLv7GWSkll-MDPA",

@@ -12,14 +12,14 @@
                 <p>Posted on Oct 15, 2025</p>
             </div>
 
-            <h4 class="text-[38px] font-bold leading-tight"> I'll Be Suuuuupppeeerrrr Impressed If You Can Get 19/19 On This TV Sitcoms Guest Star Trivia Quiz </h4>
-            <p class="text-lg font-normal mt-1"> Honestly, nothing is better than a really good guest star on a sitcom. </p>
+            <h4 class="text-[38px] font-bold leading-tight"> {{quiz.title}} </h4>
+            <p class="text-lg font-normal mt-1"> {{quiz.subtitle}} </p>
 
             <div class="flex flex-row my-4">
-                <img class="flex w-[50px] h-[50px] rounded-full overflow-hidden bg-purple-600" src="https://i.pinimg.com/736x/28/28/b0/2828b03e0d611206662d6d9ff00059ef.jpg" alt="">
+                <img class="flex w-[50px] h-[50px] rounded-full overflow-hidden bg-purple-600" [src]="quiz.creator.icon" alt="">
                 <div class="flex flex-col leading-tight text-[14px] justify-center ml-2">
                     <p class="before:content-['by_']">
-                        <span class="font-bold">Nora Dominick</span>
+                        <span class="font-bold">{{quiz.creator.username}}</span>
                     </p>
                     <p>BuzzFeed Staff</p>
                 </div>
@@ -57,8 +57,6 @@
         </div>
     </div>
 
-    <div class="bg-green-100">
-    </div>
 
 </div>
 
