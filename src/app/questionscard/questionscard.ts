@@ -16,6 +16,8 @@ export class Questionscard {
     respostasContadas: number = 0;
     quizFinalizado: boolean = false;
 
+    escolhasFeitas: any = {};
+
     perguntasRespondidas: number[] = [];
 
     constructor() {}
@@ -28,14 +30,19 @@ export class Questionscard {
         return;
       }
 
+      // PONTUAÇÃO
       if (alternativaSelecionada.respostaCerta) {
         this.pontuacao++;
       }
 
+      // ARMAZENANDO
       this.respostasContadas++;
       console.log(this.respostasContadas);
       this.perguntasRespondidas.push(perguntaIndex);
 
+      this.escolhasFeitas[perguntaIndex] = alternativaSelecionada.texto
+
+      // RESULTADO
       if (this.respostasContadas === this.questions.length) {
         this.quizFinalizado = true;
         this.quizResultado.emit(this.pontuacao);

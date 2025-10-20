@@ -4,12 +4,46 @@
             </div>
 
             <div class="grid grid-cols-2 gap-4">
-                <div *ngFor="let alternativa of pergunta.alternativas; let i = index"
+
+                <!--                
+                ''perguntasRespondidas''' guarda o indice, entao por exemplo, no inicio é vazia,
+                clique em Brat e ela passou a ter perguntasrespondidas = [0]
+                pq a pergunta do indice 0 foi respondida
+
+                e ela verifica se o índice da pergunta está inclusa no perguntasRespondidas
+                logo, isso dá verdadeiro porque a pergunta do indíce 0 está na lista no
+                momento em que eu cliquei na opção
+                
+                perguntasRespondidas.includes(perguntaIndex)
+
+                além disso, ela verifica se o alternativa.texto, por exemplo, 'Crash']
+                seria diferente das escolhasFeitas[perguntaIndex] no caso 'Brat', 'Charlotte Aitchison'
+                então se as opções que sobrarem são de fato diferentes das opções escolhidas,
+                é verdadeira, logo, ele aplica o bg-red-300
+
+                && alternativa.texto !== escolhasFeitas[perguntaIndex]
+
+
+                'cursor-not-allowed': perguntasRespondidas.includes(perguntaIndex)
+
+                Aqui ele aplica o cursor-not-allowed caso as a pergunta atual já
+                tiver sido respondida, já tem o indíce dela guardada em perguntasRespondidas,
+                e poe cursor bloqueado em todas as alternativas
+
+                -->
+
+                <div
+                [ngClass]="{
+                'bg-red-300': perguntasRespondidas.includes(perguntaIndex) && alternativa.texto !== escolhasFeitas[perguntaIndex],
+                'cursor-not-allowed': perguntasRespondidas.includes(perguntaIndex)
+                }"
+                *ngFor="let alternativa of pergunta.alternativas; let i = index"
                 (click)="handleAnswer(alternativa, perguntaIndex)"
                 class="group flex justify-center items-center w-50 h-[150px] rounded-sm cursor-pointer bg-red-600">
                     <p class="text-white text-[60px] text-center font-bold overflow-hidden group-hover:scale-110 transition-transform">
                         {{ alternativa.texto }}
                     </p>
                 </div>
+
             </div>
         </div>
