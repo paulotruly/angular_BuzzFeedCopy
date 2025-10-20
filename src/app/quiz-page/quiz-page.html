@@ -28,10 +28,16 @@
 
         <!-- perguntas e respostas -->
 
-        <app-questionscard [questions]="quiz.questions"> </app-questionscard>
+        <app-questionscard [questions]="quiz.questions" (quizResultado)="receberResultado($event)"> </app-questionscard>
+
+        <div *ngIf="quizFinalizado" class="flex flex-col items-center p-10 bg-gray-100 rounded-lg my-8">
+            <p class="text-2xl">Você acertou 
+                <span class="text-green-600 font-extrabold">{{ resultadoPontuacao }}</span> de 
+                <span class="font-bold">{{ quiz.questions.length }}</span> perguntas!
+            </p>
+        </div>
 
     </div>
 
 
 </div>
-

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-questionscard',
@@ -10,6 +10,7 @@ import { Component, Input } from '@angular/core';
 })
 export class Questionscard {
     @Input() questions: any[] = [];
+    @Output() quizResultado = new EventEmitter<number>();
 
     pontuacao: number = 0;
     respostasContadas: number = 0;
@@ -37,6 +38,7 @@ export class Questionscard {
 
       if (this.respostasContadas === this.questions.length) {
         this.quizFinalizado = true;
+        this.quizResultado.emit(this.pontuacao);
         console.log("FIM DO QUIZ! Pontuação total: ", this.pontuacao, "/", this.questions.length);
       }
     }
