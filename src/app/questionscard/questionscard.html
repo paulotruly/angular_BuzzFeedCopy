@@ -40,7 +40,7 @@
                 *ngFor="let alternativa of pergunta.alternativas; let i = index"
                 (click)="handleAnswer(alternativa, perguntaIndex)"
                 class="group flex justify-center items-center w-50 h-[150px] rounded-sm cursor-pointer bg-red-600">
-                    <p class="text-white text-[60px] text-center font-bold overflow-hidden group-hover:scale-110 transition-transform">
+                    <p class="text-white text-[40px] text-center font-bold">
                         {{ alternativa.texto }}
                     </p>
                 </div>
